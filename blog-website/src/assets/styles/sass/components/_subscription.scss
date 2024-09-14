@@ -1,0 +1,51 @@
+#subscription {
+    .subscription__box {
+        border: 1px solid rgba(124, 78, 228, 1);
+        background-color: rgba(124, 78, 228, 1);
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        height: 300px;
+
+        .subscription__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 4%;
+.subscription__top{
+    width: 25%;
+}
+            .subscription__mail {
+                display: flex;
+                gap: 10px;
+                .subscription__input {
+                    width: 220px;
+                    height: 26px;
+                    padding: 4px;
+
+                }
+                .subscription__btn{
+                    border: 1px solid aliceblue;
+                    background-color: transparent;
+                  border-radius: 9px;
+                    color: aliceblue;
+                    width: 130px;
+                    text-align: center;
+                    padding: 9px;
+                }
+            }
+
+            .subscription__top {
+                font-size: 25px;
+                color: aliceblue;
+                font-weight: bold;
+            }
+
+            .subscription__bottom {
+                color: rgba(187, 187, 187, 1);
+                width: 37%;
+            }
+        }
+    }
+}
