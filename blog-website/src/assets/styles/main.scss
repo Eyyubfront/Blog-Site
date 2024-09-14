@@ -1,1 +1,15 @@
+// TODO: --------- LAYOUT ---------
+@import "./sass/layout/header";
+
+// TODO: --------- ABSTRACTS ---------
+@import "./sass/abstracts/colors";
+
+// TODO: --------- BASE ---------
+@import "./sass/base/reset";
+@import "./sass/base/typography";
+
+// TODO: --------- BASE ---------
+@import "./sass/components/card";
+
+// TODO: --------- PAGES ---------
 @import "./sass/pages/home";
