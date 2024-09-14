@@ -1,5 +1,6 @@
 // TODO: --------- LAYOUT ---------
 @import "./sass/layout/header";
+@import "./sass/layout/footer";
 
 // TODO: --------- ABSTRACTS ---------
 @import "./sass/abstracts/colors";
@@ -10,6 +11,11 @@
 
 // TODO: --------- BASE ---------
 @import "./sass/components/card";
+
+
+@import "./sass/components/detail";
+@import "./sass/components/subscription";
+
 @import "./sass/components/pageSection";
 
 // TODO: --------- PAGES ---------

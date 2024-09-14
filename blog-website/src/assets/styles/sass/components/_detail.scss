@@ -4,6 +4,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
+        gap: 20px;
         .detail__top{
             font-size: 27px;
             font-weight: bold;
@@ -32,6 +33,7 @@
             flex-direction: row;
             align-items: center;
             gap: 30px;
+            margin-bottom: 20px;
             .detail__Like{
                 display: flex;
                 flex-direction: column;
