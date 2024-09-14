@@ -5,6 +5,7 @@ function Home() {
   return (
     <main id="home">
       <Hero />
+      
     </main>
   );
 }
