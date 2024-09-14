@@ -284,7 +284,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px;
-
+}
 #footer .footer__container {
   display: flex;
   flex-direction: column;
@@ -403,5 +403,4 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
