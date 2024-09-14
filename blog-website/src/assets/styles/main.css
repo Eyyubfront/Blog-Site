@@ -78,3 +78,42 @@
   color: rgb(187, 187, 187);
   width: 37%;
 }
+
+#detail .detail__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#detail .detail__container .detail__top {
+  font-size: 27px;
+  font-weight: bold;
+  width: 40%;
+}
+#detail .detail__container .detail__img .detailimgs {
+  width: 767px;
+}
+#detail .detail__container .detail__about {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+#detail .detail__container .detail__about .about__top {
+  width: 65%;
+}
+#detail .detail__container .detail__about .about__bottom {
+  width: 65%;
+}
+#detail .detail__container .detail__icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+#detail .detail__container .detail__icons .detail__Like {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
