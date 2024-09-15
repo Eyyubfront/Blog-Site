@@ -65,20 +65,6 @@
   text-decoration: none;
   color: rgb(21, 14, 6);
 }
-#footer .footer__container .footer__icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 19px;
-}
-#footer .footer__container .footer__icons .icons__card {
-  border: 1px solid rgb(124, 78, 228);
-  border-radius: 50%;
-  background-color: rgb(124, 78, 228);
-  color: white;
-  text-align: center;
-  padding: 6px;
-}
 #footer .footer__container .footer__line {
   border: 1px solid rgb(124, 78, 228);
   width: 90%;
@@ -496,6 +482,7 @@ body {
   width: 130px;
   text-align: center;
   padding: 9px;
+  cursor: pointer;
 }
 #subscription .subscription__box .subscription__container .subscription__top {
   font-size: 25px;
