@@ -9,13 +9,15 @@
 @import "./sass/base/reset";
 @import "./sass/base/typography";
 
-// TODO: --------- BASE ---------
+// TODO: --------- COMPONENTS ---------
 @import "./sass/components/card";
 @import "./sass/components/notfound";
 @import "./sass/components/detail";
 @import "./sass/components/subscription";
-
+@import "./sass/components/aboutus";
 @import "./sass/components/pageSection";
+@import "./sass/components/blogs";
+@import "./sass/components/loader";
 
 // TODO: --------- PAGES ---------
 @import "./sass/pages/home";

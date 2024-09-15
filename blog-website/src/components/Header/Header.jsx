@@ -5,14 +5,16 @@ const Header = () => {
   return (
     <header id="header">
       <div className="header__container">
-        <div className="header__left">
+        <Link to={"/"} className="header__left">
           <img src={siteLogo} alt="Site logo" />
           <h1>Zarrin</h1>
-        </div>
+        </Link>
         <div className="header__right">
-          <Link>Blog</Link>
-          <Link>About</Link>
-          <Link>Contact us</Link>
+          <Link to="/blogs" >Blog</Link>
+          <Link to="/aboutus">About</Link>
+          <a href="#subscription">
+          Contact us
+          </a>
         </div>
       </div>
     </header>

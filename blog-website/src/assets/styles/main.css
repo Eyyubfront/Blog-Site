@@ -11,6 +11,7 @@
   align-items: center;
 }
 #header .header__container .header__left {
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -220,8 +221,7 @@ body {
 .card img {
   width: 100%;
   height: 360px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 16px;
 }
 .card .card__content {
@@ -496,6 +496,31 @@ body {
   width: 37%;
 }
 
+#aboutUs .aboutUs__container .AboutUs__information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+#aboutUs .aboutUs__container .AboutUs__information .AboutUs__top .aboutustopname {
+  font-size: 13px;
+}
+#aboutUs .aboutUs__container .AboutUs__information .AboutUs__tittle .aboutustittle {
+  font-size: 30px;
+  font-weight: bold;
+  width: 90%;
+}
+#aboutUs .aboutUs__container .AboutUs__information .AboutUs__text {
+  width: 90%;
+}
+#aboutUs .aboutUs__container .AboutUs__information .AboutUs__bottom {
+  margin-bottom: 20px;
+}
+#aboutUs .aboutUs__container .AboutUs__information .AboutUs__bottom .aboutusphoto {
+  width: 80%;
+}
+
 .page__section {
   display: flex;
   justify-content: center;
@@ -517,6 +542,7 @@ body {
   font-size: 1.5rem;
 }
 .page__section .page__section-container .page__section-top button {
+  cursor: pointer;
   padding: 10px 15px;
   border: none;
   background-color: #7c4ee4;
@@ -545,6 +571,90 @@ body {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+#blogs .blogs__container .blogs__information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#blogs .blogs__container .blogs__information .blogs__top .blogsname {
+  font-size: 14px;
+}
+#blogs .blogs__container .blogs__information .blogs__tittle .blogstittle {
+  font-size: 27px;
+  font-weight: bold;
+}
+#blogs .blogs__container .blogs__information .blogs__bottom {
+  margin-bottom: 20px;
+}
+#blogs .blogs__container .blogs__information .blogs__bottom .blogsbotoms {
+  width: 752px;
+}
+#blogs .blog__cards {
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  gap: 20px;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.loader {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* From Uiverse.io by adamgiebl */
+}
+.loader .dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.loader .dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #7c4ee4;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+.loader .dot:last-child {
+  margin-right: 0;
+}
+.loader .dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+.loader .dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+.loader .dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #7c4ee4;
+    box-shadow: 0 0 0 0 rgba(124, 78, 228, 0.7);
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #7c4ee4;
+    box-shadow: 0 0 0 10px rgba(124, 78, 228, 0);
+  }
+  100% {
+    transform: scale(0.8);
+    background-color: #7c4ee4;
+    box-shadow: 0 0 0 0 rgba(124, 78, 228, 0.7);
+  }
 }
 
 #home #hero {
@@ -584,7 +694,6 @@ body {
   font-weight: 600;
   border-radius: 8px;
   border: none;
-  width: -moz-fit-content;
   width: fit-content;
   transition: 0.4s;
 }
@@ -598,7 +707,6 @@ body {
 #home #hero .hero__container .hero__right img {
   width: 75%;
   aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 16px;
 }

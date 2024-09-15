@@ -1,0 +1,32 @@
+#aboutUs {
+    .aboutUs__container {
+.AboutUs__information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+text-align: center;
+gap: 40px;
+.AboutUs__top{
+    .aboutustopname{
+        font-size: 13px;
+    }
+}
+.AboutUs__tittle{
+    .aboutustittle{
+        font-size: 30px;
+        font-weight: bold;
+        width: 90%;
+    }
+}
+.AboutUs__text{
+    width: 90%;
+}
+    .AboutUs__bottom{
+        margin-bottom: 20px;
+        .aboutusphoto{
+            width: 80%;
+        }
+    }
+}
+    }
+}

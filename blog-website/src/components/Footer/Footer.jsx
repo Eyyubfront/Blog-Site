@@ -13,14 +13,11 @@ const Footer = () => {
             <Link to="/"  >
               <p>Home</p>
             </Link>
-            <Link className='links'>
+            <Link to="/blogs" className='links'>
               <p>Blog</p>
             </Link>
-            <Link className='links'>
+            <Link to="/aboutus" className='links'>
               <p>About </p>
-            </Link>
-            <Link className='links'>
-              <p>Contact Us</p>
             </Link>
           </div>
           <div className="footer__icons">

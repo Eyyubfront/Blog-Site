@@ -1,22 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getBlogs } from "../../../blogService";
+import { Link } from "react-router-dom";
 
 function Hero() {
+
+  const [blogs,setBlogs] = useState([])
+  useEffect(()=>{
+getBlogs().then((res)=>setBlogs(res))
+  },[])
   return (
     <section id="hero">
       <div className="hero__container">
         <div className="hero__left">
-          <h4>Featured Post</h4>
-          <h1>How AI will Change the Future</h1>
+          <h4>{blogs[0]?.category}</h4>
+          <h1>{blogs[0]?.title}</h1>
           <p>
-            The future of AI will see home robots having enhanced intelligence,
-            increased capabilities, and becoming more personal and possibly
-            cute. For example, home robots will overcome navigation, direction
+          {blogs[0]?.description}
           </p>
+          <Link to={"/" + blogs[0]?.id}>
+          
           <button>Read more</button>
+          </Link>
         </div>
         <div className="hero__right">
           <img
-            src="https://robbreport.com/wp-content/uploads/2022/11/11-w-Utopia_1.jpg?w=681&h=383&crop=1"
+            src={blogs[0]?.image}
             alt=""
           />
         </div>
