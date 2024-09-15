@@ -30,9 +30,19 @@
         &:hover {
           opacity: 0.7;
         }
-        &:last-child {
+      }
+      .header__signup {
+        display: flex;
+        align-items: center;
+        button {
+          cursor: pointer;
+          border: none;
+          border-radius: 8px;
           color: $white-color;
+          display: flex;
+          font-weight: 600;
           background-color: $purple-color-1;
+          padding: 10px 15px;
         }
       }
     }

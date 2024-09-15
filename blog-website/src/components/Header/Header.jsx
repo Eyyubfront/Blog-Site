@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import siteLogo from "../../assets/images/site-logo.svg";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 const Header = () => {
   return (
     <header id="header">
@@ -10,11 +16,17 @@ const Header = () => {
           <h1>Zarrin</h1>
         </Link>
         <div className="header__right">
-          <Link to="/blogs" >Blog</Link>
+          <Link to="/blogs">Blog</Link>
           <Link to="/aboutus">About</Link>
-          <a href="#subscription">
-          Contact us
-          </a>
+          <a href="#subscription">Contact us</a>
+          <SignedOut>
+            <div className="header__signup">
+              <SignInButton />
+            </div>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </div>
     </header>
