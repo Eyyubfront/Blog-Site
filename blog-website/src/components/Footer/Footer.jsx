@@ -10,21 +10,15 @@ const Footer = () => {
 
           </div>
           <div className="footer__link">
-            <Link to="/"  >
+            <Link style={{textDecoration:"none"}} className='links'  to="/"  >
               <p>Home</p>
             </Link>
-            <Link to="/blogs" className='links'>
+            <Link  to="/blogs" className='links'>
               <p>Blog</p>
             </Link>
-            <Link to="/aboutus" className='links'>
+            <Link  to="/aboutus" className='links'>
               <p>About </p>
             </Link>
-          </div>
-          <div className="footer__icons">
-            <span className='icons__card'>FB</span>
-            <span className='icons__card'>IG</span>
-            <span className='icons__card'>LN</span>
-            <span className='icons__card'>YT</span>
           </div>
           <div className="footer__line">
 
