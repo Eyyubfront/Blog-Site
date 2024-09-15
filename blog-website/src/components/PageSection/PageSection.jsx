@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../Card/Card";
 
-function PageSection() {
+function PageSection({ list }) {
   return (
     <section className="page__section">
       <div className="page__section-container">
@@ -10,10 +10,9 @@ function PageSection() {
           <button>View all</button>
         </div>
         <div className="page__section-bottom">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {list?.map((item, index) => (
+            <Card key={index} item={item} />
+          ))}
         </div>
       </div>
     </section>
